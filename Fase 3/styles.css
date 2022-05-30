@@ -68,8 +68,7 @@ footer {
 }
 
 .container {
-  height: 500px;
-  width: 500px;
+  margin-bottom: 50px;
 }
 
 .box {
