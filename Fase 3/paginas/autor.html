@@ -1,49 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="paginas.css" rel="stylesheet" type="text/css">
-    <title>Autor</title>
-</head>
-<body>
-    <header class="headerstile">
-        <h4>Autor</h4>
-    </header>
-    <hr>
-    <ul>
-        <li><a href="../index.html">Inicio</a></li>
-        <li class="dropdown">
-            <a class="dropbtn">Temas</a>
-            <div class="dropdown-content">
-              <a href="Tema1.html">Tema 1</a>
-              <a href="Tema2.html">Tema 2</a>
-            </div>
-          </li>
-        <li class="dropdown">
-          <a class="dropbtn">Recursos Multimedios</a>
-          <div class="dropdown-content">
-            <a href="Recursos1.html">Recurso 1</a>
-            <a href="Recursos2.html">Recurso 2</a>
-          </div>
-        </li>
-        <li class="dropdown">
-            <a class="dropbtn">Aprendizaje</a>
-            <div class="dropdown-content">
-                <a href="Aprendizaje1.html">Aprendizaje 1</a>
-                <a href="Aprendizaje2.html">Aprendizaje 2</a>
-            </div>
-          </li>
-          <li>
-              <a href="autor.html">Autor</a>
-          </li>
-      </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <div class="autor">
-        <h4>Sobre el autor</h4>
-        <p class="letra">Nombre: Luis Gustavo Gomez E | Código: 1112786403 | Estudiante de ingeniería de sistemas | Correo electrónico: Luisgusg10@hotmail.com | Skype: Luisgusg10.</p>
-        <img class="imagen" src="foto mia.jpg" alt="">
+    <title>Autor</title>
+  </head>
+  <body>
+    <h4 class="text-center mt-2">Autor</h4>
+    <hr>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown ms-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Temas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Tema1.html">Tema 1</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Tema2.html">Tema 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Recursos Multimedios
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Recursos1.html">Recurso 1</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Recursos2.html">Recurso 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown ms-4">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Aprendizaje
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="Aprendizaje1.html">Aprendizaje 1</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="Aprendizaje2.html">Aprendizaje 2</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-4">
+              <a class="nav-link" aria-current="page" href="autor.html">Autor</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="foto mia.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Sobre el auto</h5>
+              <p class="card-text">Nombre: Luis Gustavo Gomez E.</p>
+              <p>Código: 1112786403.</p>
+              <p>Estudiante de ingeniería de sistemas.</p>
+              <p>Correo electrónico: Luisgusg10@hotmail.com</p>
+              <p>Skype: Luisgusg10.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
 </html>
